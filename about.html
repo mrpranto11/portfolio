@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pranto Sarkar | About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    html { scroll-behavior: smooth; }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease forwards;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="home.html" class="text-xl font-bold gradient-text">PS</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="home.html" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="about.html" class="text-blue-600 font-bold">About</a>
+          <a href="skills.html" class="text-gray-700 hover:text-blue-600">Skills</a>
+          <a href="projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-700"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+      <div class="flex flex-col space-y-3">
+        <a href="home.html" class="text-gray-700">Home</a>
+        <a href="about.html" class="text-blue-600 font-bold">About</a>
+        <a href="skills.html" class="text-gray-700">Skills</a>
+        <a href="projects.html" class="text-gray-700">Projects</a>
+        <a href="contact.html" class="text-gray-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white shadow-md rounded-lg fade-up">
+    
+    <!-- Profile Photo in Center -->
+  <div class="flex justify-center mb-6">
+    <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg flex items-center justify-center">
+      <img src="https://scontent.cdninstagram.com/v/t51.82787-19/524330244_18232622305291186_3986508823615228463_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=jGg4avPaEvoQ7kNvwF7TlPV&_nc_oc=AdkNP9APhx0wP1pehczSoOMDiA0m6tY1X4LzWgnehyF29OyEN_g6_7DIliav7he8cXsRsQWNeJwnxMen9lIcs_Ly&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=cv3-UmENbHnwV1j7iOQ0kA&oh=00_AfUeNYjB1dQ83zcbqcWAEJTTN2ycQhns_vPJY9l1RuBMXQ&oe=689AA479" alt="Pranto Sarkar" class="object-cover w-full h-full">
+    </div>
+  </div>
+    <!-- Heading -->
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-2 gradient-text">About Me</h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+    </div>
+
+    <!-- Description -->
+    <div class="text-center max-w-3xl mx-auto space-y-4">
+      <p class="text-gray-600 text-lg">
+        Hi, I’m <span class="font-bold text-blue-600">Pranto Sarkar</span>, a passionate <strong>Computer Science & Engineering</strong> student.
+        I love building innovative projects — from AI-powered tools to beautiful web designs.  
+        My goal is to create technology that helps people and solves real-world problems.
+      </p>
+      <p class="text-gray-600 text-lg">
+        Apart from coding, I enjoy gaming, exploring new tech trends, and creating creative content online.
+      </p>
+    </div>
+
+    <!-- Info Grid -->
+   <div class="space-y-2 text-gray-700 text-left mt-6 max-w-xl mx-auto">
+  <div><strong>Age:</strong> 21</div>
+  <div><strong>Location:</strong> Chandrapur, Maharashtra</div>
+  <div><strong>Email:</strong> sarkarpranto89755@gmail.com</div>
+</div>
+
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div class="p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow hover:shadow-lg transition">
+        <i class="fas fa-user text-3xl text-blue-600 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">My Story</h3>
+        <p class="text-gray-600">I started my tech journey in school, building small HTML projects. Now, I’m working on AI-based OS concepts and full-stack web apps.</p>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow hover:shadow-lg transition">
+        <i class="fas fa-graduation-cap text-3xl text-purple-600 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Education</h3>
+        <p class="text-gray-600">Currently pursuing B.Tech in Computer Science & Engineering at Rajiv Gandhi College of Engineering Research and Technology, Chandrapur.</p>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-pink-50 to-blue-50 rounded-xl shadow hover:shadow-lg transition">
+        <i class="fas fa-code text-3xl text-pink-600 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Skills</h3>
+        <p class="text-gray-600">Frontend Development, Google Apps Script, Firebase, AI Tools, Tailwind CSS, JavaScript, Python (beginner).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-500 mt-10">
+    <p>&copy; 2025 Pranto Sarkar. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-github"></i></a>
+      <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
